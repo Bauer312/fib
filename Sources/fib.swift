@@ -3,7 +3,7 @@
     1. Create a fibonacci sequence with n values.
     2. Create a fibonacci sequence with the last value no more than n.
 */
-func fibonacciSequence(count: Int) -> [Int] {
+public func fibonacciSequence(count: Int) -> [Int] {
   guard count > 2 else {
     switch count {
       case 2:
@@ -23,7 +23,7 @@ func fibonacciSequence(count: Int) -> [Int] {
   return fib
 }
 
-func fibonacciSequence(maximum: Int) -> [Int] {
+public func fibonacciSequence(maximum: Int) -> [Int] {
   guard maximum > 0 else {
     return [Int]()
   }
@@ -44,7 +44,7 @@ func fibonacciSequence(maximum: Int) -> [Int] {
 
 //This is your basic recursive calculator.
 //Use large numbers at your own risk, and mind your stack!
-func fibonacciValue(_ number: Int) -> Int {
+public func fibonacciValue(_ number: Int) -> Int {
   guard number > 0 else {
     return 0
   }
